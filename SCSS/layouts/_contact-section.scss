@@ -18,7 +18,25 @@
    }
 
    &__title {
-      margin-bottom: 16px;
+      margin-bottom: 8px;
+      text-align: center;
+
+      @media screen and (min-width: $bp-tablet) {
+         margin-bottom: 16px;
+
+         text-align: start;
+      }
+   }
+
+   &__text {
+      margin-top: 0;
+      margin-bottom: 24px;
+      text-align: center;
+
+      @media screen and (min-width: $bp-tablet) {
+         margin-bottom: 42px;
+         text-align: start;
+      }
    }
 
    &__form-field {
